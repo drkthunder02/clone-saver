@@ -65,9 +65,16 @@ return [
     */
 
     'providers' => [
+        //'users' => [
+        //    'driver' => 'eloquent',
+        //    'model' => App\User::class,
+        //],
+
+        //Entrust user package
         'users' => [
             'driver' => 'eloquent',
-            'model' => App\User::class,
+            'model' => App\Models\User\User::class,
+            'table' => 'users',
         ],
 
         // 'users' => [
